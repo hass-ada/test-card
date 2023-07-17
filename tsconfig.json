@@ -1,0 +1,15 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "moduleResolution": "NodeNext",
+    "lib": [
+      "ES2019",
+      "DOM"
+    ],
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+  },
+  "include": [
+    "src/**/*",
+  ]
+}

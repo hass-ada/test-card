@@ -1,0 +1,42 @@
+{
+  "name": "swipe-card",
+  "version": "0.1.0",
+  "description": "A card thats lets you swipe through multiple Lovelace cards.",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "pnpm run clean && pnpm run rollup",
+    "rollup": "rollup --config rollup.config.ts --configPlugin swc3",
+    "clean": "rm -rf dist/*"
+  },
+  "keywords": [
+    "swipe",
+    "swiper",
+    "home-assistant",
+    "lovelace",
+    "card"
+  ],
+  "author": "Ada",
+  "license": "MIT",
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.8",
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@swc/core": "^1.3.69",
+    "@tsconfig/node18": "^18.2.0",
+    "@tsconfig/recommended": "^1.0.2",
+    "@types/node": "^20.4.2",
+    "custom-card-helpers": "^1.9.0",
+    "eslint": "^8.45.0",
+    "rollup": "^3.26.2",
+    "rollup-plugin-swc3": "0.9.0",
+    "rollup-plugin-visualizer": "^5.9.2"
+  },
+  "dependencies": {
+    "@lit-labs/scoped-registry-mixin": "^1.0.1",
+    "home-assistant-js-websocket": "^8.2.0",
+    "lit": "^2.7.6",
+    "swiper": "^10.0.4"
+  }
+}
